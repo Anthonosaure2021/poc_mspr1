@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Tableau de bord</h1>
+    <h2>Informations de la machine</h2>
+    <p>Adresse IP locale : {{ local_ip }}</p>
+    <p>Nom de la machine : {{ hostname }}</p>
+
+    <h2>Nombre de machines connectées sur le LAN</h2>
+    <p>{{ connected_devices_count }}</p>
+
+    <h2>Résultats du scan réseau</h2>
+    <ul>
+        {% for host in network_scan_results %}
+            <li>{{ host }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Latence WAN</h2>
+    <p>{{ wan_latency }}</p>
+
+    <h2>Version de l'application</h2>
+    <p>{{ application_version }}</p>
+</body>
+</html>
