@@ -9,4 +9,9 @@ Le script Harvester.py est notre application qui va se charger de scanner le ré
 
 
 # Comment fonctionne la solution ?
+\
 
+
+
+
+Au jour du vendredi 16/02 à 12h16, la partie "application web" n'a pas été entammée.
